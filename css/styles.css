@@ -83,7 +83,7 @@ p:last-child {
 .logo a {
     text-decoration: none;
     color: var(--clr-accent);
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /* navigation */
@@ -186,6 +186,8 @@ footer p {
 
 .about-us__body {
     padding: 3em 1em 3em;
+    word-break: break-all;
+    
 }
 
 .location {
@@ -267,6 +269,7 @@ footer p {
     background-attachment: fixed;
     background-size: cover;
     padding: 3em 1em 1.5em;
+    word-break: break-all;
 }
 
 .contact__body a {
@@ -292,11 +295,16 @@ footer p {
     /* .hero {
         background-image: url(../images/shutterstock_670334776.jpg);
     } */
+    .logo a {
+        font-size: 1em;
+    }
 
     .about-us__intro,
     .contact__body {
        background-attachment: inherit;
     }
+
+
 
     .about-us,
     .location,
@@ -323,6 +331,7 @@ footer p {
         flex-direction: column;
         justify-content: center;
         padding: 6em 3em;
+        word-break: break-all;
     }
 
     
@@ -356,6 +365,8 @@ footer p {
     .contact__body > * {
         max-width: 30rem;
         margin-right: auto;
+        word-break: break-all;
+        font-size: 1em;
     }
 
     .reserve {
@@ -375,5 +386,12 @@ footer p {
     .footer-nav {
         max-width: 28rem;
         margin: 1.5em auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .contact__body a {
+        font-size: 0.5em;
     }
 }
